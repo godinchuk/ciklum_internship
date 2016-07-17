@@ -1,0 +1,197 @@
+.hero-banner {
+  &__container {
+    height: 700px;
+    width: 100%;
+    background-size: contain;
+    background: #f7f7f7 url(/images/background--pc--female-vfl1oeEA8.jpg) no-repeat top right;
+    padding: 75px 20px;
+  }
+
+  &__content {
+    position: absolute;
+    top: 180px;
+    left: 20%;
+  }
+
+  &__header {
+    font-family: "Open Sans", "lucida grande", "Segoe UI", "lucida sans unicode", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    color: #47525d;
+    line-height: 60px;
+    text-align: left;
+    width: 500px;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 500px;
+
+  }
+
+  &__text {
+    font-family: "Open Sans", "lucida grande", "Segoe UI", "lucida sans unicode", sans-serif;
+    color: #47525d;
+    display: block;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 30px;
+    max-width: 400px;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 400px;
+  }
+
+  &__call-to-action {
+    float: left;
+
+    font-size: 18px;
+    font-weight: normal;
+
+    margin-top: 40px;
+
+  }
+
+  &__try {
+    width: auto;
+    background-color: rgb(0, 113, 224);
+    border-radius: 6px;
+    display: block;
+    font-family: "Open Sans", "lucida grande", "Segoe UI", "lucida sans unicode", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 21px;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: #FFF;
+    }
+
+  }
+
+  &__buy {
+    line-height: 26px;
+    font-family: "Open Sans", "lucida grande", "Segoe UI", "lucida sans unicode", sans-serif;
+    margin-top: 15px;
+    text-align: left;
+    color: #47525d;
+    display: block;
+  }
+
+  &__buy-it-now {
+    font-family: "Open Sans", "lucida grande", "Segoe UI", "lucida sans unicode", sans-serif;
+    color: #0071e0;
+    border-bottom: 1px solid #0071e0;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .hero-banner {
+    &__container {
+      background-position: 650px center;
+    }
+
+    &__content {
+      top: 100px;
+      left: 18%;
+    }
+
+    &__header {
+      font-size: 31px;
+      line-height: 40.3px;
+      width: 350px;
+      margin-bottom: 20px;
+      max-width: 350px;
+
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 330px;
+
+      width: 330px;
+    }
+
+    &__call-to-action {
+      font-size: 16px;
+    }
+
+    &__try {
+      line-height: 21px;
+    }
+    &__buy-it-now {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-banner {
+    &__container {
+      background-position: 500px center;
+    }
+    &__try {
+      padding: 14px 20px;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .hero-banner {
+    &__container {
+      background-position: 400px center;
+    }
+    &__content {
+      top: 150px;
+      left: 12%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-banner {
+    &__content {
+      left: 5%;
+    }
+    &__call-to-action {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero-banner {
+    &__content {
+      top: 180px;
+      left: 12%;
+    }
+    &__content {
+      left: 5%;
+    }
+    &__text {
+      max-width: 250px;
+      padding-bottom: 0px;
+      width: 250px;
+    }
+    &__call-to-action {
+      margin-top: 30px;
+    }
+    &__call-to-action {
+      width: 70%;
+    }
+    &__try {
+      width: 100%;
+    }
+  }
+}

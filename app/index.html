@@ -1,10 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ciklum_internship</title>
+    <title>testwebapp</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -18,34 +21,349 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-  </head>
-  <body>
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-  <div>Init</div>
+<div class="container">
+    <div class="navbar">
+        <img src="images/microsoft.png" class="navbar__logo" alt="logo"/>
+        <ul class="navbar__container navbar__main-menu">
+            <li class="navbar__item"><a class="navbar__link-collapse">Left</a></li>
+            <li class="navbar__item navbar__item-collapsable">
+                <a class="navbar__link-collapse">Store</a>
+                <ul class="navbar__submenu">
+                    <li class="navbar__submenu-item">
+                        <a class="navbar__link-collapse navbar__link-collapse-horizontal">Business & Education</a>
+                        <ul class="navbar__submenu navbar__submenu-layer-2">
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a href=""
+                                                                                             class="navbar__link-collapse">Sale</a>
+                            </li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse" z>Devices</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Software</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Apps</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Games</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Entertainment</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__submenu-item">
+                        <a class="navbar__link-collapse navbar__link-collapse-horizontal">Something else</a>
+                        <ul class="navbar__submenu navbar__submenu-layer-2">
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a href=""
+                                                                                             class="navbar__link-collapse">Sale</a>
+                            </li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse" z>Devices</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item navbar__item-collapsable">
+                <a class="navbar__link-collapse">Products</a>
+                <ul class="navbar__submenu">
+                    <li class="navbar__submenu-item">
+                        <a href="" class="navbar__link-collapse navbar__link-collapse-horizontal">Store
+                            home</a>
+                        <ul class="navbar__submenu navbar__submenu-layer-2">
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a href=""
+                                                                                             class="navbar__link-collapse">Sale</a>
+                            </li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse" z>Devices</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Software</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Apps</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Games</a></li>
+                            <li class="navbar__submenu-item navbar__submenu-item-layer-2"><a
+                                    class="navbar__link-collapse">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link-collapse">Support</a></li>
+        </ul>
+        <ul class="navbar__container navbar__container--right">
+            <li class="navbar__menu-item">
+                <form class="form-inline navbar__search-form">
+                    <div class="form-group navbar__search-group">
+                        <div class="input-group">
+                            <input class="navbar__search" placeholder="Search microsoft.com"/>
+                            <button class="navbar__search-submit"><span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li class="navbar__menu-item navbar__item navbar__cart">
+                <span class="glyphicon glyphicon-shopping-cart"></span> 0
+            </li>
+            <li class="navbar__item navbar__menu-item navbar__mobile-menu">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </li>
+            <li class="navbar__item navbar__menu-item navbar__sign-in">Sign in</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6">
+            <div class="navbar__search-container">
+                <form class="form-inline navbar__search-form">
+                    <div class="form-group navbar__search-group">
+                        <div class="input-group">
+                            <input class="navbar__search" placeholder="Search microsoft.com"/>
+                            <button class="navbar__search-submit"><span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+<div class="hero-banner">
+    <div class="hero-banner__container">
+        <div class="hero-banner__content">
+            <h1 class="hero-banner__header">Безопасный доступ, синхронизация и совместная работа</h1>
+            <h2 class="hero-banner__text">Хранение и безопасный доступ к данным — аккаунты Dropbox Business пользуются
+                доверием у системных
+                администраторов и нравятся пользователям.</h2>
+            <div class="hero-banner__call-to-action">
+                <a class="hero-banner__try">Попробуйте бесплатную 30-дневную ознакомительную версию</a>
+                <span class="hero-banner__buy">или <a class="hero-banner__buy-it-now">купите прямо сейчас</a></span>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
+<div class="subscribe">
+    <div class="subscribe__content">
+        <h2 class="subscribe__header">Join over 2 million designers already using InVision. Get InVision
+            <strong>free</strong> forever!</h2>
+        <form class="form-inline subscribe__form-container" role="form">
+            <div class="form-group subscribe__input-group">
+                <label class="sr-only" for="exampleInputEmail2">Email</label>
+                <span class="glyphicon subscribe__input-group glyphicon-user subscribe__icon"></span>
+                <input type="email" class="form-control subscribe__form-item" id="exampleInputEmail2"
+                       placeholder="Your Name">
+            </div><div class="form-group subscribe__input-group">
+            <label class="sr-only" for="exampleInputEmail2">Email</label>
+            <span class="glyphicon glyphicon-envelope subscribe__icon"></span><input type="email" class="form-control subscribe__form-item" id="exampleInputEmail2"
+                   placeholder="Email Address">
+        </div><div class="form-group subscribe__input-group">
+            <label class="sr-only" for="exampleInputPassword">Create a Password</label>
+            <span class="glyphicon glyphicon-lock subscribe__icon"></span>
+            <input type="password" class="form-control subscribe__form-item"
+                   id="exampleInputPassword" placeholder="Create a Password">
+        </div><button type="submit" class="btn btn-danger subscribe__form-item  subscribe__submit">Get Started - Free
+            Forever!
+        </button>
+        </form>
+        <p class="subscribe__terms-of-condition">
+            By clicking "Get Started — Free Forever!" I agree to InVision's
+            <a class="subscribe__terms-of-condition-link" href="">Terms of Service.</a></p>
+    </div>
+</div>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+<div class="special-offer__container">
+    <ul class="special-offer__item-list">
+        <li class="special-offer__item"><a href="">
+            <div class="special-offer__picture-container" style="background-image: url(/images/eve-valkyrie.jpg)">
+            </div>
+            <div class="special-offer__item-description">
+                <h4 class="special-offer__item-type">Featured content</h4>
+                <h3 class="special-offer__item-name">EVE: Valkyrie</h3>
+            </div>
+        </a>
+        </li>
+        <li class="special-offer__item"><a href="">
+            <div class="special-offer__picture-container" style="background-image: url(/images/luckys-tale.jpg)"></div>
+            <div class="special-offer__item-description">
+                <h4 class="special-offer__item-type">INCLUDED WITH ALL RIFT PURCHASES</h4>
+                <h3 class="special-offer__item-name">Lucky's Tale</h3>
+            </div>
+        </a>
+        </li>
+        <li class="special-offer__item"><a href="">
+            <div class="special-offer__picture-container" style="background-image: url(/images/oc3-stage-image.jpg)">
+            </div>
+            <div class="special-offer__item-description">
+                <h4 class="special-offer__item-type">FEATURED STORY</h4>
+                <h3 class="special-offer__item-name">Announcing Oculus Connect 3 and Rift Availability Update</h3>
+            </div>
+        </a></li>
+    </ul>
+</div>
+
+<div class="footer">
+    <div class="footer__content">
+        <nav class="footer__links_nav">
+            <div class="footer__links_nav_block">
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">Shop and Learn</h3>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Mac</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">iPad</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">iPhone</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Watch</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">TV</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Music</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">iTunes</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">iPod</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Accessories</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links_nav_block">
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">Apple Store</h3></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Find a Store</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Genius Bar</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Workshops and Learning</a>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Youth Programs</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Apple Store App</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Refurbished</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Financing</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Reuse and Recycling</a>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Order Status</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Shopping Help</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links_nav_block">
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">For Education</h3></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Apple and Education</a>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Shop for University</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">For Business</h3></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Apple and Business</a>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Shop for Business</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links_nav_block">
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">Account</h3></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Manage Your Apple ID</a>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Apple Store Account</a>
+                    </li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">iCloud.com</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">Apple Values</h3></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Environment</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Supplier
+                        Responsibility</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Accessibility</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links_nav_block">
+                <ul class="footer__list">
+                    <li class="footer__list-paragraph"><h3 class="footer__list-paragraph-header">About Apple</h3></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Job Opportunities</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Press Info</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Investors</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Events</a></li>
+                    <li class="footer__list-paragraph"><a class="footer__list-paragraph-link">Contact Apple</a></li>
+            </div>
+        </nav>
+
+        <section class="footer__footer">
+
+            <div class="footer__shop">
+                <p>
+                    More ways to shop: Visit an
+                    <a href="">Apple Store</a>
+                    , call 1-800-MY-APPLE, or
+                    <a>find a reseller.</a>
+                </p>
+            </div>
+
+            <div class="footer__locale">
+                <a class="bordernone" href="">Canada (English)</a>
+                <a href="">Français</a>
+            </div>
+
+            <div class="footer__legal">
+                <div class="footer__legal-copyright">
+                    Copyright © 2016 Apple Inc. All rights reserved.
+                </div>
+                <div class="footer__legal-links-container">
+                    <a class="footer__legal-link" href="">Privacy Policy</a>
+                    <a class="footer__legal-link" href="">Use of Cookies</a>
+                    <a class="footer__legal-link" href="">Terms of Use</a>
+                    <a class="footer__legal-link" href="">Sales and Refunds</a>
+                    <a class="footer__legal-link" href="">Legal</a>
+                    <a class="footer__legal-link" href="">Site Map</a>
+                </div>
+            </div>
+
+        </section><!-- and of footer__footer-->
+    </div>    <!-- and of footer__content-->
+</div>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
 </html>
